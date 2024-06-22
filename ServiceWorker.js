@@ -1,9 +1,9 @@
 const cacheName = "SAHU-Portfolio-1";
 const contentToCache = [
-    "Build/Git Website Build.loader.js",
-    "Build/Git Website Build.framework.js",
-    "Build/Git Website Build.data",
-    "Build/Git Website Build.wasm",
+    "Build/BUILDS.loader.js",
+    "Build/BUILDS.framework.js",
+    "Build/BUILDS.data",
+    "Build/BUILDS.wasm",
     "TemplateData/style.css"
 
 ];
