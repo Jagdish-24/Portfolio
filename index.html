@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Portfolio</title>
+    <title>Unity Web Player | Portfolio</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <div id="unity-container">
-      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,15 +57,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Git Website Build.loader.js";
+      var loaderUrl = buildUrl + "/Website-Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Git Website Build.data",
-        frameworkUrl: buildUrl + "/Git Website Build.framework.js",
-        codeUrl: buildUrl + "/Git Website Build.wasm",
+        arguments: [],
+        dataUrl: buildUrl + "/Website-Build.data",
+        frameworkUrl: buildUrl + "/Website-Build.framework.js",
+        codeUrl: buildUrl + "/Website-Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "SAHU",
+        companyName: "JagdishSahu",
         productName: "Portfolio",
-        productVersion: "1",
+        productVersion: "1.0",
         showBanner: unityShowBanner,
       };
 
