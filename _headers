@@ -1,0 +1,16 @@
+/*.framework.js.unityweb
+  Content-Encoding: br
+  Cache-Control: public, max-age=31536000
+
+/*.data.unityweb
+  Content-Encoding: br
+  Cache-Control: public, max-age=31536000
+
+/*.wasm.unityweb
+  Content-Encoding: br
+  Cache-Control: public, max-age=31536000
+
+/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET
+  Access-Control-Allow-Headers: *
