@@ -45,7 +45,9 @@
     function detectAndSendDeviceType(unityInstance) {
       const deviceType = detectDevice();
       console.log("Detected Device Type: " + deviceType);
+
       // Sending the device type to Unity
+      console.log("Sending device type to Unity: " + deviceType);
       unityInstance.SendMessage('CurrentUserPlatform', 'OnDeviceDetected', deviceType);
     }
 
@@ -119,6 +121,7 @@
       }).then((unityInstance) => {
         loadingBar.style.display = "none";
         detectAndSendDeviceType(unityInstance); // Call device detection after Unity loads
+
       }).catch((message) => {
         alert(message);
       });
