@@ -87,6 +87,25 @@
 
       loadingBar.style.display = "block";
 
+      function setMaxFrameRate(fps) {
+      let interval = 1000 / fps;
+      let lastTime = 0;
+
+      function customLoop(timestamp) {
+          if (timestamp - lastTime >= interval) {
+              lastTime = timestamp;
+              window.requestAnimationFrame(customLoop);
+          } else {
+              setTimeout(() => window.requestAnimationFrame(customLoop), interval - (timestamp - lastTime));
+          }
+      }
+
+      window.requestAnimationFrame(customLoop);
+      }
+
+      // Set the frame rate limit (e.g., 60 FPS)
+      setMaxFrameRate(60);
+
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
